@@ -1,25 +1,24 @@
 ## Instalações e Comandos
-$ npm init -y
-$ npm i apollo-server graphql --save
-$ npx https://github.com/luizomf/eslint-prettier
-$ npm i eslint eslint-config-prettier eslint-plugin-prettier prettier -D
-$ npm i @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
-$ npm i sucrase -D
-$ npm i nodemon -D
-$
+$ npm init -y <br />
+$ npm i apollo-server graphql --save <br />
+$ npx https://github.com/luizomf/eslint-prettier <br />
+$ npm i eslint eslint-config-prettier eslint-plugin-prettier prettier -D <br />
+$ npm i @typescript-eslint/eslint-plugin @typescript-eslint/parser -D <br />
+$ npm i sucrase -D <br />
+$ npm i nodemon -D <br />
 
 ## Execução do Projeto
-$ npm run dev
+$ npm run dev <br />
 
 ## Subindo projeto para o github
-$ git init
-$ git add .
-$ git commit -m "first commit"
-$ git branch -M 'main'
-$ git remote add origin https://github.com/alissondel/projetoGraphql.git
-$ git push -u origin 'main'
+$ git init <br />
+$ git add . <br />
+$ git commit -m "first commit" <br />
+$ git branch -M 'main' <br />
+$ git remote add origin https://github.com/alissondel/projetoGraphql.git <br />
+$ git push -u origin 'main' <br />
 
-/* Subindo as atualizações restantes */
-$ git add .
-$ git commit -m "first commit"
-$ git push
+/* Subindo as atualizações restantes */<br />
+$ git add . <br />
+$ git commit -m "first commit" <br />
+$ git push <br />
