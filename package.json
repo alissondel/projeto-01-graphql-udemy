@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "Alisson Delatim",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^3.10.0",
+    "graphql": "^16.5.0"
+  }
 }
