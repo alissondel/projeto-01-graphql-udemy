@@ -1,0 +1,24 @@
+# Interface Type
+
+query getPost {
+  post(id: "8600") {
+    __typename
+
+    ... on Post{
+      id
+      title
+    }
+
+    ... on PostNotFoundError{
+      statusCode
+      message
+      postId
+    }
+
+    ... on PostTimeoutError{
+      statusCode
+      message
+      timeout
+    }
+  }
+}
