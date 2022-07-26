@@ -1,0 +1,31 @@
+# Aliases nas Queries - Apelidando campos
+
+query getPost {
+  post1: post(id: "860") {
+    myId: id
+    myTitle: title
+    myBody: body
+    indexRef
+    mycreatedAt: createdAt
+    myunixTimestamp: unixTimestamp
+  }
+
+  post2: post(id: "940") {
+    myId: id
+    myTitle: title
+    myBody: body
+    indexRef
+    createdAt
+    unixTimestamp
+  }
+# Não usando alias nas queries
+
+  post(id: "940") {
+    myId: id
+    myTitle: title
+    myBody: body
+    indexRef
+    createdAt
+    unixTimestamp
+  }
+}

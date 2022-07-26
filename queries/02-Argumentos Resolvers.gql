@@ -1,0 +1,23 @@
+# Argumentos nos Resolvers
+query getUser {
+  user(id: "602") {
+    id
+    firstName
+    lastName
+    userName
+    indexRef
+    createdAt
+  }
+}
+
+#   GET
+query getUsers{
+  users {
+    id
+    firstName
+    lastName
+    userName
+    indexRef
+    createdAt
+  }
+}

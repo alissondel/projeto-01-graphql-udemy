@@ -1,0 +1,23 @@
+# Argumentos Dinâmicos para Queries e Resolvers
+
+query getUser($id: ID! $teste: Boolean) {
+  user(id: $id teste: $teste) {
+    id
+    firstName
+    lastName
+    userName
+    indexRef
+    createdAt
+  }
+}
+
+query getUsers{
+  users {
+    id
+    firstName
+    lastName
+    userName
+    indexRef
+    createdAt
+  }
+}

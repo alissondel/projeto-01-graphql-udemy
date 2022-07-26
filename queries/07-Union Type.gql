@@ -1,0 +1,17 @@
+# Union Type
+
+query getPost {
+  post(id: "860") {
+    __typename
+
+    ... on Post{
+      id
+      title
+    }
+
+    ... on PostNotFoundError{
+      statusCode
+      message
+    }
+  }
+}

@@ -1,0 +1,22 @@
+# Query Fragments - Evitando repetições nas Consultas
+
+fragment post on Post {
+  myId: id
+  myTitle: title
+  myBody: body
+  indexRef
+  createdAt
+  unixTimestamp
+}
+
+query getPost {
+  post1: post(id: "860") {
+    ...post
+  }
+  post2: post(id: "940") {
+    ...post
+  }
+  post3: post(id: "783") {
+    ...post
+  }
+}

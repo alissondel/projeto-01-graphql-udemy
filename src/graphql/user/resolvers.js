@@ -1,25 +1,13 @@
-const users = () => {
-  return [
-    {
-      id: '1',
-      userName: 'Alisson',
-    },
-    {
-      id: '2',
-      userName: 'Rafael',
-    },
-    {
-      id: '3',
-      userName: 'Lucas',
-    },
-  ];
+const users = async (_, { input }, { getUsers }) => {
+  const apiFiltersInput = new URLSearchParams(input);
+  const response = await getUsers('/?' + apiFiltersInput);
+  return response.json();
 };
 
-const user = () => {
-  return {
-    id: '1',
-    userName: 'Luiz',
-  };
+const user = async (_, { id }, { getUsers }) => {
+  const response = await getUsers('/' + id);
+  const user = await response.json();
+  return user;
 };
 
 export const userResolvers = {
